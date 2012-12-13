@@ -1,0 +1,54 @@
+doctype 5
+html
+  head
+    title= title
+    script(src='javascripts/jquery.js')
+    script(src='socket.io/socket.io.js')
+    script(src='javascripts/app.js')
+
+    style
+      html {
+        font-family: "Helvetica World", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-size: 16px;
+        color: #333;
+      }
+
+      body {
+        width: 800px;
+        max-height: 450px;
+        overflow: scroll;
+        margin: 33px auto;
+      }
+
+      #chat {
+        width: 800px;
+        max-height: 400px;
+        height: 400px;
+        overflow: scroll;
+        list-style-type: none;
+        margin: 0 0;
+        padding: 0;
+      }
+
+      li {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 5px 0px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .me {
+        color: #0012ab;
+      }
+
+      #text {
+        width: 700px;
+        margin-right: 20px;
+      }
+
+      #send {
+        width: 70px;
+      }
+
+  body
+    block content
